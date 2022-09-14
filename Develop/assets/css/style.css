@@ -210,9 +210,13 @@ p {
 }
 
 @media screen and (max-width: 1000px) {
-    .search-engine-optimization, .online-reputation-management .social-media-marketing {
+    .search-engine-optimization, .online-reputation-management, .social-media-marketing 
+    .search-engine-optimization h2, .online-reputation-management h2, .social-media-marketing h2
+    {
       width: 100%; 
-      /* The width is 100%, when the viewport is 800px or smaller */
+      /* The width is 100% when the viewport is 1000px or smaller */
+      height: auto;
+    
     }
 }
 @media screen and (max-width: 1000px) {
@@ -227,4 +231,5 @@ p {
      text-align: center;
      float: none;
     }
+    /*pops the floating div out to the bottom of page when screen width decreases*/
 }
